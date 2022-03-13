@@ -5,17 +5,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
   width: 30%;
   background: #fff;
   border-radius: 10px;
-
-  .inner {
-    background: #00b6ff;
-    padding: 1em;
-    border-radius: 10px;
-    width: 100%;
-  }
 }
+.container .inner {
+  background: #00b6ff;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
