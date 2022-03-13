@@ -3,26 +3,36 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  width: 30%;
-  background: #fff;
-  border-radius: 10px;
-}
 .container .inner {
-  background: #00b6ff;
+  background: #07daa2;
   padding: 1em;
   border-radius: 10px;
-  width: 100%;
-  -webkit-clip-path: circle(10% at 0% 0%);
-          clip-path: circle(10% at 0% 0%);
-  transition: -webkit-clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.container .inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+.container .inner span {
+  float: right;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+.container .inner:hover span {
+  color: rgba(0, 0, 0, 0);
 }
 .container .inner h1 {
   color: #fff;
@@ -31,7 +41,31 @@ body {
 .container .inner p {
   color: #fff;
 }
-.container:hover .inner {
-  -webkit-clip-path: circle(70%);
-          clip-path: circle(70%);
+
+.container2 {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1em;
+}
+.container2 .inner2 {
+  background: #07daa2;
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% - 2em);
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.container2 .inner2 h1 {
+  color: #fff;
+  margin: 0;
+}
+.container2 .inner2 p {
+  color: #fff;
+}
+.container2:hover .inner2 {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }/*# sourceMappingURL=main.css.map */

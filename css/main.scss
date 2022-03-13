@@ -3,22 +3,64 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container {
-  width: 30%;
-  background: #fff;
-  border-radius: 10px;
 
+.container {
   .inner {
-    background: #00b6ff;
+    background: rgb(7, 218, 162);
     padding: 1em;
     border-radius: 10px;
-    width: 100%;
-    clip-path: circle(10% at 0% 0%);
-    transition: clip-path 0.5s ease-in-out;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      clip-path: circle(75%);
+      background: #00b6ff;
+    }
+
+    span {
+      float: right;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.5s;
+      position: relative;
+      margin-right: 4%;
+    }
+
+    &:hover span {
+      color: rgba($color: #000, $alpha: 0);
+    }
+
+    h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.container2 {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1em;
+
+  .inner2 {
+    background: rgb(7, 218, 162);
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 2em);
+    clip-path: inset(0 0 0 100%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 
     h1 {
       color: #fff;
@@ -30,7 +72,7 @@ body {
     }
   }
 
-  &:hover .inner {
-    clip-path: circle(70%);
+  &:hover .inner2 {
+    clip-path: inset(0 0 0 0);
   }
 }
