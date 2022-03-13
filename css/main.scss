@@ -17,6 +17,8 @@ body {
     padding: 1em;
     border-radius: 10px;
     width: 100%;
+    clip-path: circle(10% at 0% 0%);
+    transition: clip-path 0.5s ease-in-out;
 
     h1 {
       color: #fff;
@@ -26,5 +28,9 @@ body {
     p {
       color: #fff;
     }
+  }
+
+  &:hover .inner {
+    clip-path: circle(70%);
   }
 }

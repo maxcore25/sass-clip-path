@@ -18,6 +18,11 @@ body {
   padding: 1em;
   border-radius: 10px;
   width: 100%;
+  -webkit-clip-path: circle(10% at 0% 0%);
+          clip-path: circle(10% at 0% 0%);
+  transition: -webkit-clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
 }
 .container .inner h1 {
   color: #fff;
@@ -25,4 +30,8 @@ body {
 }
 .container .inner p {
   color: #fff;
+}
+.container:hover .inner {
+  -webkit-clip-path: circle(70%);
+          clip-path: circle(70%);
 }/*# sourceMappingURL=main.css.map */
