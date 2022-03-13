@@ -18,4 +18,11 @@ body {
   padding: 1em;
   border-radius: 10px;
   width: 100%;
+}
+.container .inner h1 {
+  color: #fff;
+  margin: 0;
+}
+.container .inner p {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
